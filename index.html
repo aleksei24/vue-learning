@@ -14,6 +14,8 @@
   <!-- при наведении курсора на этот элемент появится подсказка -->
   <div id="lorem" :title="message">
     {{ message }}
+    <h2 v-if="status">TRUE</h2>
+    <h2 v-else>FALSE</h2>
   </div>
 
   <script>
@@ -32,7 +34,8 @@
     let x = new Vue({
       el: '#lorem',
       data: {
-        message: 'Hi everyone!'
+        message: 'Hi everyone! I`ve missed you',
+        status: false
       }
     })
   </script>
