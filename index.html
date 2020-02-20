@@ -14,8 +14,11 @@
   <!-- при наведении курсора на этот элемент появится подсказка -->
   <div id="lorem" :title="message">
     {{ message }}
-    <h2 v-if="status">TRUE</h2>
-    <h2 v-else>FALSE</h2>
+    <!-- между if else не должно что-то быть -->
+    <h2 v-if="status == 1">HELLO</h2>
+    <h2 v-else-if="status == 2">HI</h2>
+    <h2 v-else-if="status == 3">GOOD DAY</h2>
+    <h2 v-else="status == 4">EMPTY</h2>
   </div>
 
   <script>
@@ -35,7 +38,7 @@
       el: '#lorem',
       data: {
         message: 'Hi everyone! I`ve missed you',
-        status: false//меняя значение можно вывести разный контент (если он указан в html)
+        status: 4//меняя значение можно вывести разный контент (если он указан в html)
       }
     })
   </script>
