@@ -6,7 +6,7 @@
 </head>
 <body>
   <div id="app">
-    {{ message }}
+    <div :class="{pop: isActive}"></div>
   </div>
   <div id="test">
     {{ message }}
@@ -25,7 +25,8 @@
     let app = new Vue({
       el: '#app',
       data: {
-        message: 'Hi everyone!'
+        message: 'Hi everyone!',
+        isActive: true
       }
     });// между компонентами ставтся точка с запятой !!!
     let basil = new Vue({// переменную можно назвать как-угодно
