@@ -28,6 +28,12 @@
         {{title.id}}: {{title.name}}
       </li>
     </ul>
+
+    <ul @click="nameFunction">
+      <li v-for="title in items">
+        {{title.id}}: {{title.name}}
+      </li>
+    </ul>
   </div>
   
 
@@ -45,11 +51,11 @@
         ]
       },
       methods: {
-        nameFunction(param1, param2){
-          // some code
+        nameFunction(){
+          alert('nameFunction');
         }
       },
-      anotherFunc: function(){
+      anotherFunc: function(x, y){
         alert('anotherFunc');
       }
     })
