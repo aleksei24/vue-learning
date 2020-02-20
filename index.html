@@ -11,18 +11,28 @@
   <div id="test">
     {{ message }}
   </div>
+  <!-- при наведении курсора на этот элемент появится подсказка -->
+  <div id="lorem" v-bind:title="message">
+    {{ message }}
+  </div>
 
   <script>
-    var app = new Vue({
+    let app = new Vue({
       el: '#app',
       data: {
         message: 'Hi everyone!'
       }
-    });
-    var test = new Vue({
-      el: '#test',
-      data: {
+    });// между компонентами ставтся точка с запятой !!!
+    let basil = new Vue({// переменную можно назвать как-угодно
+      el: '#test', // название должно совпадать с id в html-коде
+      data: { //свойства объявляются здесь (в data)
         message: 'Hello everybody!'
+      }// вкладывание js кода внутрь компонента vue запрещено
+    });
+    let x = new Vue({
+      el: '#lorem',
+      data: {
+        message: 'Hi everyone!'
       }
     })
   </script>
