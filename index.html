@@ -9,7 +9,8 @@
     <ul>
       <!-- директива указывается там, где хочу, чтоб элемент повторялся -->
       <!-- number и number должны совпадать -->
-      <li v-for="number in list">{{number}}</li> 
+      <!-- вывод индекса массива со значением из массива list -->
+      <li v-for="(number, index) in list">{{index + 1}}: {{number}}</li> 
     </ul>
     <ul>
       <li></li>
