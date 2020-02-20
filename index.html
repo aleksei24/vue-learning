@@ -14,7 +14,14 @@
     let app = new Vue({
       el: '#shop',
       data: {
-        
+        list: ['one', 'two', 'three', 'four', 'five'],// свойство, содержащее массив
+        items: [ // здесь массив объектов
+          {id: 1, name: 'bread'}, // ключ - значение
+          {id: 2, name: 'pork'},
+          {id: 3, name: 'rice'},
+          {id: 4, name: 'carrot'},
+          {id: 5, name: 'vegetable oil'}
+        ]
       }
     })
   </script>
