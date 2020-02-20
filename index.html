@@ -5,42 +5,16 @@
   <script src="./node_modules/vue/dist/vue.js"></script>
 </head>
 <body>
-  <div id="app">
-    <div :class="{pop: isActive, 'bt-default': clickMe}"></div>
+  <div id="shop">
+    
   </div>
-  <div id="test">
-    {{ message }}
-  </div>
-  <!-- при наведении курсора на этот элемент появится подсказка -->
-  <div id="lorem" :title="message">
-    {{ message }}
-    <!-- между if else не должно что-то быть -->
-    <h2 v-if="status == 1">HELLO</h2>
-    <h2 v-else-if="status == 2">HI</h2>
-    <h2 v-else-if="status == 3">GOOD DAY</h2>
-    <h2 v-else=>EMPTY IS EQUAL TO {{ status }}</h2>
-  </div>
+  
 
   <script>
     let app = new Vue({
-      el: '#app',
+      el: '#shop',
       data: {
-        message: 'Hi everyone!',
-        isActive: false,
-        clickMe: true
-      }
-    });// между компонентами ставтся точка с запятой !!!
-    let basil = new Vue({// переменную можно назвать как-угодно
-      el: '#test', // название должно совпадать с id в html-коде
-      data: { //свойства объявляются здесь (в data)
-        message: 'Hello everybody!'
-      }// вкладывание js кода внутрь компонента vue запрещено
-    });
-    let x = new Vue({
-      el: '#lorem',
-      data: {
-        message: 'Hi everyone! I`ve missed you',
-        status: 23//меняя значение можно вывести разный контент (если он указан в html)
+        
       }
     })
   </script>
