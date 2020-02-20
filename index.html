@@ -18,7 +18,7 @@
     <h2 v-if="status == 1">HELLO</h2>
     <h2 v-else-if="status == 2">HI</h2>
     <h2 v-else-if="status == 3">GOOD DAY</h2>
-    <h2 v-else="status == 4">EMPTY</h2>
+    <h2 v-else=>EMPTY IS EQUAL TO {{ status }}</h2>
   </div>
 
   <script>
@@ -38,7 +38,7 @@
       el: '#lorem',
       data: {
         message: 'Hi everyone! I`ve missed you',
-        status: 4//меняя значение можно вывести разный контент (если он указан в html)
+        status: 23//меняя значение можно вывести разный контент (если он указан в html)
       }
     })
   </script>
