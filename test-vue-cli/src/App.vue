@@ -2,7 +2,7 @@
   <div id="new App">
     <!-- with : an array -->
     <!-- without : a string -->
-    <ToDoList :todo="todo"/>
+    <ToDoList :list="todo"/>
   </div>
 </template>
 
