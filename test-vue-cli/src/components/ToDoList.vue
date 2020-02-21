@@ -5,10 +5,6 @@
         <!-- todo in {{}} is taken from the first argument in for () -->
         <!-- index in key is taken from the second argument in for () -->
         <li :for="(todo, index) in todo" :key="index">{{todo}}</li>
-        <li>2 item</li>
-        <li>3 item</li>
-        <li>4 item</li>
-        <li>5 item</li>
     </ul>
 </template>
 
