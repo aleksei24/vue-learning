@@ -1,12 +1,14 @@
 <template>
   <div id="new App">
-    <ToDoList />
+    <!-- with : an array -->
+    <!-- without : a string -->
+    <ToDoList :todo="todo"/>
   </div>
 </template>
 
 <script>
 import ToDoList from './components/ToDoList.vue'
-export default {
+export default { //default is a selected one
   name: 'new App',
   data(){ // must be a function
     return {
@@ -14,7 +16,7 @@ export default {
     }
   },
   components: {
-    ToDoList
+    ToDoList // should be the same name as in import
   }
 
   }
