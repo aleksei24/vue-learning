@@ -2,7 +2,8 @@
   <div id="new App">
     <!-- with : an array -->
     <!-- without : a string -->
-    <ToDoList :list="todo"/>
+    <!-- attr todo is taken from data below -->
+    <ToDoList :todo="todo"/>
   </div>
 </template>
 
